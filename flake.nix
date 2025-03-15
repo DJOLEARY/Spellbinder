@@ -36,6 +36,7 @@
           buildInputs = with pkgs; [
             phpEnv
             laravel
+            blade-formatter
             intelephense
             nodejs_18
             phpunit
