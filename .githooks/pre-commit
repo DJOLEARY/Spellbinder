@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# TCR (Test && Commit || Reset)
+
+# Run tests
+php artisan test
+
+if [ $? -eq 0 ]; then
+    # Commit changes
+    exit 0
+else
+    # Reset changes
+    git reset --hard
+    exit 1
+fi
