@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# TCR (Test && Commit || Reset)
+# TCR (Test && Commit || Revert)
 
 # Run tests
 php artisan test
