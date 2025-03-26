@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
-# TCR (Test && Commit || Revert)
+# description: Git hook to enforce TCR (Test && Commit || Revert)
+# dependencies: php git bash
 
 # Run tests
 php artisan test
