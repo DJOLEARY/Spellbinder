@@ -9,8 +9,10 @@ class AddTraceIdTest extends TestCase
 {
     public function test_trace_id_is_in_context(): void
     {
+        // Act
         $this->get('/');
 
+        // Assert
         static::assertTrue(Context::has('trace_id'));
     }
 }

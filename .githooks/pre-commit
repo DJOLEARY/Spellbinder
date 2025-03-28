@@ -9,7 +9,7 @@ if [ $? -eq 0 ]; then
     # Commit changes
     exit 0
 else
-    # Reset changes
-    git reset --hard
+    # Reset changes but keep tests
+    git restore --source=HEAD --staged --worktree -- $(git diff --name-only | grep -v 'tests')
     exit 1
 fi
