@@ -10,6 +10,6 @@ if [ $? -eq 0 ]; then
     exit 0
 else
     # Reset changes but keep tests
-    git restore --source=HEAD --staged --worktree -- $(git diff --name-only | grep -v 'tests')
+    git diff --name-only | grep -v 'tests' | xargs git restore --source=HEAD --staged --worktree
     exit 1
 fi
