@@ -24,6 +24,7 @@
               ++ (with all; [
                 xdebug
                 iconv
+                pcntl
               ])
             );
             extraConfig = ''
