@@ -2,10 +2,14 @@
 	frankenphp
 }
 
+www.spellbinder.eu {
+	redir https://spellbinder.eu{uri}
+}
+
 # The domain name of your server
-localhost {
+spellbinder.eu {
 	# Set the webroot to the public/ directory
-	root public/
+	root * public/
 	# Enable compression (optional)
 	encode zstd br gzip
 	# Execute PHP files from the public/ directory and serve assets
