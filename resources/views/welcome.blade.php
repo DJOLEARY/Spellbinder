@@ -24,9 +24,6 @@
                     <div class="flex lg:justify-center lg:col-start-2">
                         <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
                     </div>
-                    @if (Route::has('login'))
-                        <livewire:welcome.navigation />
-                    @endif
                 </header>
 
                 <main class="mt-6">
