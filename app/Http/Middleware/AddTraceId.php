@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Middleware;
 
 use Closure;
@@ -8,12 +10,12 @@ use Illuminate\Support\Facades\Context;
 use Illuminate\Support\Str;
 use Symfony\Component\HttpFoundation\Response;
 
-class AddTraceId
+final class AddTraceId
 {
     /**
      * Handle an incoming request.
      *
-     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     * @param  Closure(Request): (Response)  $next
      */
     public function handle(Request $request, Closure $next): Response
     {
