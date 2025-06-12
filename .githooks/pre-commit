@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# description: Git hook to enforce TCR (Test && Commit || Revert)
 # dependencies: php git bash
 
-# Run tests
+# Lint
+composer run-script lint
+
+# Enforce TCR (Test && Commit || Revert)
 php artisan test
 
 if [ $? -eq 0 ]; then
