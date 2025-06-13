@@ -29,7 +29,7 @@
                 <main class="mt-6">
                     <div class="grid gap-6 lg:grid-cols-3 lg:gap-8">
                         <div class="flex lg:justify-center lg:col-start-2">
-                            <p>hello world!</p>
+                            <p>coming soon</p>
                         </div>
                     </div>
                 </main>
